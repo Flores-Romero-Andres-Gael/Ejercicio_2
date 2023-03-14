@@ -1,3 +1,6 @@
+#Flores Romero Andres Gael
+#09/03/2023
+
 from tkinter import *
 from tkinter import ttk
 import tkinter as ttk
