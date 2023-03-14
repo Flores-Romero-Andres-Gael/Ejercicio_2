@@ -8,7 +8,7 @@ import tkinter as ttk
 #--------------------BASE FRAME--------------------
 root = Tk()
 
-root.geometry("650x520")
+root.geometry("660x530")
 root.configure(background="gray40")
 
 #imagen
@@ -79,7 +79,7 @@ Boton6 = ttk.Button(Frame3, background="#482525", text="Back", foreground="Slate
 
 #Definicion del frame que contendra la tabla
 Frame4 = ttk.Frame(Frame2, background="#482525")
-Frame4.grid(column=0, row=1, pady=5, padx=5)
+Frame4.grid(column=0, row=1, pady=10, padx=5)
 
 
 # Crear encabezado de la tabla
