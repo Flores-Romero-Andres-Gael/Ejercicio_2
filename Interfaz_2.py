@@ -48,11 +48,30 @@ DescDato = StringVar()
 QuantDato = IntVar()
 PriceDato = float()
 
-IDEntry = ttk.Entry(Frame3, background="#482525", textvariable=IDDato, width=20).grid(column=1, row=1, padx=5, pady=2, sticky=(W))
-IDEntry = ttk.Entry(Frame3, background="#482525", textvariable=NameDato, width=20).grid(column=1, row=2, padx=5,  pady=2, sticky=(W))
-IDEntry = ttk.Entry(Frame3, background="#482525", textvariable=DescDato, width=20).grid(column=1, row=3, padx=5,  pady=2, sticky=(W))
-IDEntry = ttk.Entry(Frame3, background="#482525", textvariable=QuantDato, width=20).grid(column=1, row=4, padx=5,  pady=2, sticky=(W))
-IDEntry = ttk.Entry(Frame3, background="#482525", textvariable=PriceDato, width=20).grid(column=1, row=5, padx=5,  pady=2, sticky=(W))
+ttk.Label(Frame3, text="_________________________", background="#482525",foreground="white").grid(column=1, row=1, padx=5, pady=2, sticky=(W))
+IDEntry = ttk.Entry(Frame3, background="#482525", textvariable=IDDato, width=20, justify="center")
+IDEntry.grid(column=1, row=1, padx=5, sticky=(W,N))
+IDEntry.configure(borderwidth=0)
+
+ttk.Label(Frame3, text="_________________________", background="#482525",foreground="white").grid(column=1, row=2, padx=5, pady=2, sticky=(W))
+NameDatoEntry= ttk.Entry(Frame3, background="#482525", textvariable=NameDato, width=20,justify="center")
+NameDatoEntry.grid(column=1, row=2, padx=5,  pady=2, sticky=(W,N))
+NameDatoEntry.configure(borderwidth=0)
+
+ttk.Label(Frame3, text="_________________________", background="#482525",foreground="white").grid(column=1, row=3, padx=5, pady=2, sticky=(W))
+DescDatoEntry = ttk.Entry(Frame3, background="#482525", textvariable=DescDato, width=20,justify="center")
+DescDatoEntry.grid(column=1, row=3, padx=5,  pady=2, sticky=(W,N))
+DescDatoEntry.configure(borderwidth=0)
+
+ttk.Label(Frame3, text="_________________________", background="#482525",foreground="white").grid(column=1, row=4, padx=5, pady=2, sticky=(W))
+QuantDatoEntry = ttk.Entry(Frame3, background="#482525", textvariable=QuantDato, width=20,justify="center")
+QuantDatoEntry.grid(column=1, row=4, padx=5,  pady=2, sticky=(W,N))
+QuantDatoEntry.configure(borderwidth=0)
+
+ttk.Label(Frame3, text="_________________________", background="#482525",foreground="white").grid(column=1, row=5, padx=5, pady=2, sticky=(W))
+PriceDatoEntry = ttk.Entry(Frame3, background="#482525", textvariable=PriceDato, width=20,justify="center")
+PriceDatoEntry.grid(column=1, row=5, padx=5,  pady=2, sticky=(W,N))
+PriceDatoEntry.configure(borderwidth=0)
 
 
 #Botones Imagenes
